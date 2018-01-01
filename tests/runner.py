@@ -75,7 +75,7 @@ def test_runner_run():
                 result = runner.run("foo", "bar", "baz")
                 assert resolve_m.call_args[0] == ("foo", )
     assert handler_m.call_args[0] == ("somehandler", )
-    assert handler.call_args[0] == (23, makey_mock, 2, 'foo', 'bar', 'baz')
+    assert handler.call_args[0] == (23, 2, 'foo', 'bar', 'baz')
     assert result == 7
 
 
