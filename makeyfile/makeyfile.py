@@ -9,6 +9,10 @@ class Makeyfile(object):
 
     def __init__(self):
         self.registry = registry
+        for runner in self.registry["runner"]:
+            if isinstance(self.registry["runner"][runner], type):
+                self.registry[
+                    "runner"][runner] = self.registry["runner"][runner](self)
         self.discovery = Discovery()
         self.loader = Loader()
         self.filepath = self.discovery.find()
