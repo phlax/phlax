@@ -5,6 +5,6 @@ from .shell import ShellRunner
 
 
 def register_defaults(registry):
-    registry.register("runner", "sequence", SequenceRunner())
-    registry.register("runner", "python", PythonRunner())
-    registry.register("runner", "shell", ShellRunner())
+    registry.register("runner", "sequence", SequenceRunner)
+    registry.register("runner", "python", PythonRunner)
+    registry.register("runner", "shell", ShellRunner)

@@ -37,7 +37,7 @@ class Runner(object):
         handler, resolved = self.resolve(args[0])
         with runner(handler.capitalize(), args[0], resolved) as cb:
             return self.get_handler(handler)(
-                cb, self.makeyfile, resolved, *args)
+                cb, resolved, *args)
 
 
 def main():
