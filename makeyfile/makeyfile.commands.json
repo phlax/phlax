@@ -3,6 +3,7 @@
 	".": "makeyfile.commands.dot",
 	".list": "makeyfile.commands.list",
 	".dump": "makeyfile.commands.dump",
-	".get": "makeyfile.commands.get"
+	".get": "makeyfile.commands.get",
+	".resolve": "makeyfile.commands.resolve"
     }
 }
